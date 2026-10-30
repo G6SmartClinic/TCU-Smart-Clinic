@@ -844,7 +844,12 @@ emailjs.init({
           : "Your clinic appointment request has been rejected. Please contact the clinic for more information."
       };
 
-    }
+    await emailjs.send(
+    EMAILJS_SERVICE_ID,
+    EMAILJS_TEMPLATE_ID,
+    templateParams
+);
+    } 
   </script>
 
 </body>
